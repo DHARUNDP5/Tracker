@@ -2,15 +2,15 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 //component import
-import Navbar from "../Navbar/Navbar.js";
-// import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 //Slice import
-import { getUserData } from "../Store/LandingSlice.js";
+import { getUserData } from "../Store/Slice/LandingSlice";
 //Images import
 import SearcLogo from "../Images/SearchLogo.svg";
 import Cancel from "../Images/Cancel.svg";
 import Loader from "../Images/Loader.gif";
-// import Fotter from "../Footer/Footer";
+import Fotter from "../Footer/Footer";
 const LandingPage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -75,7 +75,7 @@ const LandingPage = () => {
       </div>
     </div>
     <div className="mt-111">
-    {/* <Fotter /> */}
+    <Fotter />
 
     </div>
 
