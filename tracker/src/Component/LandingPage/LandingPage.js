@@ -11,7 +11,12 @@ import SearcLogo from "../Images/SearchLogo.svg";
 import Cancel from "../Images/Cancel.svg";
 import Loader from "../Images/Loader.gif";
 import Fotter from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 const LandingPage = () => {
+  const Navigate = useNavigate();
+    const handelPages = () => {
+      Navigate("/detail");
+    }
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getUserData());
@@ -40,7 +45,7 @@ const LandingPage = () => {
           ></img>
         </div>
 
-        <div className="bg-blue-400 h-51 w-64 flex justify-center items-center rounded-r-xl cursor-pointer ">
+        <div onClick={handelPages} className="bg-blue-400 h-51 w-64 flex justify-center items-center rounded-r-xl cursor-pointer ">
           <img src={SearcLogo}></img>
         </div>
       </div>
