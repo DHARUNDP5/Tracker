@@ -1,6 +1,6 @@
 //package import
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { axiosSearch } from "../../Config/Config.js";
+import { axiosSearch } from "../../Component/Config/Config.js";
 //data fetch
 export const getUserData = createAsyncThunk("UserData", async () => {
   return axiosSearch.get(`/?results=10`);
