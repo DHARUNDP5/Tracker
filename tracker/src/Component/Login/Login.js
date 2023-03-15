@@ -2,7 +2,13 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Background from "../Images/Background.svg";
 import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  
+    const Navigate = useNavigate();
+    const handelPages = () => {
+      Navigate("/landing");
+    }
   return (
     <div>
       <Navbar />
@@ -22,7 +28,7 @@ const Login = () => {
             placeholder="Your password"
             required
           ></input>
-          <button className="bg-[#6496EB] text-white w-[330px] h-51 mt-[40px] rounded-full ">
+          <button onClick={handelPages} className="bg-[#6496EB] text-white w-[330px] h-51 mt-[40px] rounded-full ">
             Log In
           </button>
           <span className="text-[#F75B46] mt-[20px] mb-51 ">Invalid Credentials</span>

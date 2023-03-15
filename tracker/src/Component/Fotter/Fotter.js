@@ -36,11 +36,11 @@ function DetailPage() {
                             <img className="mt-[54px] w-[325px] h-[319px] rounded-xl" src={sample} alt='' ></img>
                         </div>
                         <div className="flex flex-col mt-11 font-poppins">
-                            <p className="font-bold flex flex-col items-center mb-[20px] text-[24px]">KAVINKUMAR.S</p>
+                            <p className="font-bold flex flex-col items-center mb-[20px] text-[24px]">DHARUN PRAKASH.K</p>
                             <div className='ml-[240px] text-[20px] text-[#70747E] font-normal'>
                                 <div className='flex flex-row] mb-[18px]'>
                                     <img className='mr-[17px]' src={email} alt=''></img>
-                                    <h3>kavin@gmail.com</h3>
+                                    <h3>Dharundp@gmail.com</h3>
                                 </div>
                                 <div className='flex flex-row] mb-[18px]'>
                                     <img className='mr-[17px]' src={location} alt=''></img>
