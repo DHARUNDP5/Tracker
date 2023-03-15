@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import userDataReducer from "../Store/LandingSlice.js";
+import userDataReducer from "./Slice/LandingSlice";
 
 const rootReducer = combineReducers({
   userDataInfo: userDataReducer,

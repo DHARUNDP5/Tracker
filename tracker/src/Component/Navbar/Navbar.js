@@ -1,5 +1,6 @@
-
+//package import 
 import React from "react";
+//Images import
 import Logo from "../Images/Logo.svg";
 
 const Navbar = () => {
